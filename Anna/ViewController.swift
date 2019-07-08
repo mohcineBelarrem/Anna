@@ -16,6 +16,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     static let showHistorySegue = "showHistory"
     static let showAnagramListSegue = "showAnagramList"
     
+    var historyWord = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func showHistory(_ sender: Any) {
         
+        performSegue(withIdentifier: ViewController.showHistorySegue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -70,6 +72,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     
+    @IBAction func unwindFromHistory(segue: UIStoryboardSegue) {
+        textfield.text = historyWord
+    }
 }
 
 
