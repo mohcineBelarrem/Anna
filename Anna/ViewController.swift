@@ -43,11 +43,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func showAnagramChecker(_ sender: Any) {
         
         if textfield.text!.count <= 2 {
-            self.showEmptyTextfieldAlert()
+            showEmptyTextfieldAlert()
             return
         }
         
-        self.performSegue(withIdentifier: ViewController.showAnagramCheckerSegue, sender: self)
+        performSegue(withIdentifier: ViewController.showAnagramCheckerSegue, sender: self)
     }
     
     @IBAction func showHistory(_ sender: Any) {
@@ -70,7 +70,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         //Process Word
         //Add it to History
     }
-    
     
     @IBAction func unwindFromHistory(segue: UIStoryboardSegue) {
         textfield.text = historyWord

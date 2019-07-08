@@ -27,7 +27,7 @@ class AnagramCheckerVC: UIViewController, UITextFieldDelegate {
         let text = textfield.text ?? ""
         
         guard text.count >= 2 else {
-            self.showEmptyTextfieldAlert()
+            showEmptyTextfieldAlert()
             return
         }
         
@@ -43,7 +43,7 @@ class AnagramCheckerVC: UIViewController, UITextFieldDelegate {
                                       style: .default,
                                       handler: nil))
         
-        self.present(alert, animated: true)
+        present(alert, animated: true)
         
         
     }
@@ -60,7 +60,7 @@ class AnagramCheckerVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func done(_ sender: Any) {
         
-        self.dismiss(animated: true)
+        dismiss(animated: true)
     }
     
 
@@ -75,8 +75,7 @@ extension UIViewController {
         
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
-        self.present(alert, animated: true)
+        present(alert, animated: true)
 
-        
     }
 }
