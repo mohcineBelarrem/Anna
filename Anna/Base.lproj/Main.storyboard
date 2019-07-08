@@ -67,6 +67,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="UxV-nT-WqW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
@@ -145,12 +146,42 @@
                     <view key="view" contentMode="scaleToFill" id="ipI-Gk-4I9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uXC-hG-FWG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" id="Eki-UF-JGb">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eki-UF-JGb" id="iEA-Me-Pyv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="myh-z8-gFQ" firstAttribute="trailing" secondItem="uXC-hG-FWG" secondAttribute="trailing" id="8HC-gO-YYQ"/>
+                            <constraint firstItem="uXC-hG-FWG" firstAttribute="leading" secondItem="myh-z8-gFQ" secondAttribute="leading" id="IUX-Zl-uLj"/>
+                            <constraint firstItem="uXC-hG-FWG" firstAttribute="top" secondItem="myh-z8-gFQ" secondAttribute="top" id="Nsi-AP-6OF"/>
+                            <constraint firstItem="myh-z8-gFQ" firstAttribute="bottom" secondItem="uXC-hG-FWG" secondAttribute="bottom" id="UMl-jo-mO7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="myh-z8-gFQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="nvd-vI-VVO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fX1-6N-Tf0"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fX1-6N-Tf0">
+                            <connections>
+                                <action selector="done:" destination="6IE-Uh-f5c" id="apB-Dr-zfz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="uXC-hG-FWG" id="zwB-aH-mtr"/>
+                        <segue destination="UxV-nT-WqW" kind="unwind" identifier="showMainMenu" unwindAction="unwindFromHistoryWithSegue:" id="sKU-Jd-Ie8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdc-RX-uvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
