@@ -63,6 +63,7 @@
                     <connections>
                         <outlet property="textfield" destination="ANB-ap-7N3" id="159-oM-0T8"/>
                         <segue destination="vH2-pL-YbQ" kind="show" identifier="showAnagramChecker" id="6QQ-TA-8xc"/>
+                        <segue destination="8DM-I8-b4S" kind="show" identifier="showHistory" id="lLR-Ho-Dca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -136,6 +137,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xci-Bl-LnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="898.66071428571422"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="ZxS-1K-XJ1">
+            <objects>
+                <viewController id="6IE-Uh-f5c" userLabel="History" customClass="HistoryVC" customModule="Anna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ipI-Gk-4I9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="myh-z8-gFQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="History" id="nvd-vI-VVO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fX1-6N-Tf0"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdc-RX-uvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2t0-4t-XFM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8DM-I8-b4S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hMu-dC-IE7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6IE-Uh-f5c" kind="relationship" relationship="rootViewController" id="f5X-GP-3aV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1O6-ap-rjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="139"/>
         </scene>
     </scenes>
 </document>
