@@ -12,7 +12,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var textfield: UITextField!
     
-    
+    static let showAnagramCheckerSegue = "showAnagramChecker"
+    static let showHistorySegue = "showHistory"
+    static let showAnagramListSegue = "showAnagramList"
     
     
     override func viewDidLoad() {
@@ -39,9 +41,24 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func showAnagramChecker(_ sender: Any) {
         
+        if textfield.text!.count <= 2 {
+            self.showEmptyTextfieldAlert()
+            return
+        }
+        
+        self.performSegue(withIdentifier: ViewController.showAnagramCheckerSegue, sender: self)
     }
     
     @IBAction func showHistory(_ sender: Any) {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == ViewController.showAnagramCheckerSegue {
+            let destination = segue.destination.children.first as! AnagramCheckerVC
+            destination.originalWord = textfield.text!
+        }
         
     }
     
