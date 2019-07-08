@@ -8,13 +8,52 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var textfield: UITextField!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        textfield.delegate = self
+        
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textfield.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        processWord()
+        textfield.resignFirstResponder()
+        return true
+    }
 
+    @IBAction func showAnagramsList(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func showAnagramChecker(_ sender: Any) {
+        
+    }
+    
+    @IBAction func showHistory(_ sender: Any) {
+        
+    }
+    
+    
+    func processWord() {
+        //TODO:
+        //Process Word
+        //Add it to History
+    }
+    
+    
 }
+
+
 
