@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Anna" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Main" customClass="ViewController" customModule="Anna" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="8ps-sI-67e">
                                 <rect key="frame" x="20" y="64" width="374" height="195"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANB-ap-7N3">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a word with at least one letter." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANB-ap-7N3">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -62,11 +62,80 @@
                     </view>
                     <connections>
                         <outlet property="textfield" destination="ANB-ap-7N3" id="159-oM-0T8"/>
+                        <segue destination="vH2-pL-YbQ" kind="show" identifier="showAnagramChecker" id="6QQ-TA-8xc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--AnagramChecker-->
+        <scene sceneID="LQF-LV-32s">
+            <objects>
+                <viewController id="xg1-b5-aVB" userLabel="AnagramChecker" customClass="AnagramCheckerVC" customModule="Anna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQ5-8A-Utz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CgY-lo-EdE">
+                                <rect key="frame" x="20" y="108" width="374" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a word with at least one letter." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4L-S3-O3r">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-Fk-zGX">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="30"/>
+                                        <state key="normal" title="Check"/>
+                                        <connections>
+                                            <action selector="checkAnagram:" destination="xg1-b5-aVB" eventType="touchUpInside" id="CEX-3Y-cnN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h8r-Ia-jib" firstAttribute="trailing" secondItem="CgY-lo-EdE" secondAttribute="trailing" constant="20" id="gvx-yU-vvZ"/>
+                            <constraint firstItem="CgY-lo-EdE" firstAttribute="top" secondItem="h8r-Ia-jib" secondAttribute="top" constant="20" id="mLd-6d-cDz"/>
+                            <constraint firstItem="CgY-lo-EdE" firstAttribute="leading" secondItem="h8r-Ia-jib" secondAttribute="leading" constant="20" id="p0l-b0-1aO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h8r-Ia-jib"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Check for Anagram" id="1Ir-EH-HTK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="oZP-GB-QbT">
+                            <connections>
+                                <action selector="done:" destination="xg1-b5-aVB" id="WTH-pe-SXk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textfield" destination="o4L-S3-O3r" id="xwR-5T-gKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEx-3e-wlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="898.66071428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tLQ-Yi-d7D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vH2-pL-YbQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QJM-B1-HlX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xg1-b5-aVB" kind="relationship" relationship="rootViewController" id="y4i-wC-h3u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xci-Bl-LnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="898.66071428571422"/>
         </scene>
     </scenes>
 </document>
