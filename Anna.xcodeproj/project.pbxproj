@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B42FF27922D3DD58001A1304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF27822D3DD58001A1304 /* AppDelegate.swift */; };
+		B42FF27B22D3DD58001A1304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF27A22D3DD58001A1304 /* ViewController.swift */; };
+		B42FF27E22D3DD58001A1304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42FF27C22D3DD58001A1304 /* Main.storyboard */; };
+		B42FF28022D3DD5F001A1304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42FF27F22D3DD5F001A1304 /* Assets.xcassets */; };
+		B42FF28322D3DD5F001A1304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42FF28122D3DD5F001A1304 /* LaunchScreen.storyboard */; };
+		B42FF28E22D3DD5F001A1304 /* AnnaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF28D22D3DD5F001A1304 /* AnnaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B42FF28A22D3DD5F001A1304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B42FF26D22D3DD58001A1304 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B42FF27422D3DD58001A1304;
+			remoteInfo = Anna;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B42FF27522D3DD58001A1304 /* Anna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42FF27822D3DD58001A1304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B42FF27A22D3DD58001A1304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B42FF27D22D3DD58001A1304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B42FF27F22D3DD5F001A1304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B42FF28222D3DD5F001A1304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B42FF28422D3DD5F001A1304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42FF28922D3DD5F001A1304 /* AnnaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42FF28D22D3DD5F001A1304 /* AnnaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnaTests.swift; sourceTree = "<group>"; };
+		B42FF28F22D3DD5F001A1304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B42FF27222D3DD58001A1304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42FF28622D3DD5F001A1304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B42FF26C22D3DD58001A1304 = {
+			isa = PBXGroup;
+			children = (
+				B42FF27722D3DD58001A1304 /* Anna */,
+				B42FF28C22D3DD5F001A1304 /* AnnaTests */,
+				B42FF27622D3DD58001A1304 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B42FF27622D3DD58001A1304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B42FF27522D3DD58001A1304 /* Anna.app */,
+				B42FF28922D3DD5F001A1304 /* AnnaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B42FF27722D3DD58001A1304 /* Anna */ = {
+			isa = PBXGroup;
+			children = (
+				B42FF27822D3DD58001A1304 /* AppDelegate.swift */,
+				B42FF27A22D3DD58001A1304 /* ViewController.swift */,
+				B42FF27C22D3DD58001A1304 /* Main.storyboard */,
+				B42FF27F22D3DD5F001A1304 /* Assets.xcassets */,
+				B42FF28122D3DD5F001A1304 /* LaunchScreen.storyboard */,
+				B42FF28422D3DD5F001A1304 /* Info.plist */,
+			);
+			path = Anna;
+			sourceTree = "<group>";
+		};
+		B42FF28C22D3DD5F001A1304 /* AnnaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B42FF28D22D3DD5F001A1304 /* AnnaTests.swift */,
+				B42FF28F22D3DD5F001A1304 /* Info.plist */,
+			);
+			path = AnnaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B42FF27422D3DD58001A1304 /* Anna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B42FF29222D3DD5F001A1304 /* Build configuration list for PBXNativeTarget "Anna" */;
+			buildPhases = (
+				B42FF27122D3DD58001A1304 /* Sources */,
+				B42FF27222D3DD58001A1304 /* Frameworks */,
+				B42FF27322D3DD58001A1304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anna;
+			productName = Anna;
+			productReference = B42FF27522D3DD58001A1304 /* Anna.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B42FF28822D3DD5F001A1304 /* AnnaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B42FF29522D3DD5F001A1304 /* Build configuration list for PBXNativeTarget "AnnaTests" */;
+			buildPhases = (
+				B42FF28522D3DD5F001A1304 /* Sources */,
+				B42FF28622D3DD5F001A1304 /* Frameworks */,
+				B42FF28722D3DD5F001A1304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B42FF28B22D3DD5F001A1304 /* PBXTargetDependency */,
+			);
+			name = AnnaTests;
+			productName = AnnaTests;
+			productReference = B42FF28922D3DD5F001A1304 /* AnnaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B42FF26D22D3DD58001A1304 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = belarrem;
+				TargetAttributes = {
+					B42FF27422D3DD58001A1304 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					B42FF28822D3DD5F001A1304 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = B42FF27422D3DD58001A1304;
+					};
+				};
+			};
+			buildConfigurationList = B42FF27022D3DD58001A1304 /* Build configuration list for PBXProject "Anna" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B42FF26C22D3DD58001A1304;
+			productRefGroup = B42FF27622D3DD58001A1304 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B42FF27422D3DD58001A1304 /* Anna */,
+				B42FF28822D3DD5F001A1304 /* AnnaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B42FF27322D3DD58001A1304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42FF28322D3DD5F001A1304 /* LaunchScreen.storyboard in Resources */,
+				B42FF28022D3DD5F001A1304 /* Assets.xcassets in Resources */,
+				B42FF27E22D3DD58001A1304 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42FF28722D3DD5F001A1304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B42FF27122D3DD58001A1304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42FF27B22D3DD58001A1304 /* ViewController.swift in Sources */,
+				B42FF27922D3DD58001A1304 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42FF28522D3DD5F001A1304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42FF28E22D3DD5F001A1304 /* AnnaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B42FF28B22D3DD5F001A1304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B42FF27422D3DD58001A1304 /* Anna */;
+			targetProxy = B42FF28A22D3DD5F001A1304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B42FF27C22D3DD58001A1304 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B42FF27D22D3DD58001A1304 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B42FF28122D3DD5F001A1304 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B42FF28222D3DD5F001A1304 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B42FF29022D3DD5F001A1304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B42FF29122D3DD5F001A1304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B42FF29322D3DD5F001A1304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9362VAWBT;
+				INFOPLIST_FILE = Anna/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.belarrem.Anna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B42FF29422D3DD5F001A1304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9362VAWBT;
+				INFOPLIST_FILE = Anna/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.belarrem.Anna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B42FF29622D3DD5F001A1304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9362VAWBT;
+				INFOPLIST_FILE = AnnaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.belarrem.AnnaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anna.app/Anna";
+			};
+			name = Debug;
+		};
+		B42FF29722D3DD5F001A1304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9362VAWBT;
+				INFOPLIST_FILE = AnnaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.belarrem.AnnaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anna.app/Anna";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B42FF27022D3DD58001A1304 /* Build configuration list for PBXProject "Anna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42FF29022D3DD5F001A1304 /* Debug */,
+				B42FF29122D3DD5F001A1304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B42FF29222D3DD5F001A1304 /* Build configuration list for PBXNativeTarget "Anna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42FF29322D3DD5F001A1304 /* Debug */,
+				B42FF29422D3DD5F001A1304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B42FF29522D3DD5F001A1304 /* Build configuration list for PBXNativeTarget "AnnaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42FF29622D3DD5F001A1304 /* Debug */,
+				B42FF29722D3DD5F001A1304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B42FF26D22D3DD58001A1304 /* Project object */;
+}
