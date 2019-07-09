@@ -81,8 +81,8 @@ class AnagramListVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
     
     func checkForAnagram(_ word : String, _ j : Int) {
         
-        let appId = "7389a8e4"
-        let appKey = "498fab3db48aa6ed917f203fa303432a"
+        let appId = "b758082f"
+        let appKey = "f5e527ece9fa806ae02181504b978997"
         let language = "en-gb"
         let fields = "definitions"
         let strictMatch = "true"
