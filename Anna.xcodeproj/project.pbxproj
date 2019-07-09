@@ -15,6 +15,7 @@
 		B42FF28E22D3DD5F001A1304 /* AnnaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF28D22D3DD5F001A1304 /* AnnaTests.swift */; };
 		B42FF29922D3EC60001A1304 /* AnagramCheckerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF29822D3EC60001A1304 /* AnagramCheckerVC.swift */; };
 		B42FF29B22D3FDD3001A1304 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF29A22D3FDD3001A1304 /* HistoryVC.swift */; };
+		B42FF29E22D409D3001A1304 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF29D22D409D3001A1304 /* HistoryManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B42FF28F22D3DD5F001A1304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B42FF29822D3EC60001A1304 /* AnagramCheckerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramCheckerVC.swift; sourceTree = "<group>"; };
 		B42FF29A22D3FDD3001A1304 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		B42FF29D22D409D3001A1304 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				B42FF27A22D3DD58001A1304 /* ViewController.swift */,
 				B42FF27C22D3DD58001A1304 /* Main.storyboard */,
 				B42FF29A22D3FDD3001A1304 /* HistoryVC.swift */,
+				B42FF29D22D409D3001A1304 /* HistoryManager.swift */,
 				B42FF29822D3EC60001A1304 /* AnagramCheckerVC.swift */,
 				B42FF27F22D3DD5F001A1304 /* Assets.xcassets */,
 				B42FF28122D3DD5F001A1304 /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 				B42FF29B22D3FDD3001A1304 /* HistoryVC.swift in Sources */,
 				B42FF29922D3EC60001A1304 /* AnagramCheckerVC.swift in Sources */,
 				B42FF27922D3DD58001A1304 /* AppDelegate.swift in Sources */,
+				B42FF29E22D409D3001A1304 /* HistoryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
