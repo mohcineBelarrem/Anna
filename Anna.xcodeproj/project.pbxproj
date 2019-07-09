@@ -16,6 +16,7 @@
 		B42FF29922D3EC60001A1304 /* AnagramCheckerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF29822D3EC60001A1304 /* AnagramCheckerVC.swift */; };
 		B42FF29B22D3FDD3001A1304 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF29A22D3FDD3001A1304 /* HistoryVC.swift */; };
 		B42FF29E22D409D3001A1304 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF29D22D409D3001A1304 /* HistoryManager.swift */; };
+		B42FF2A022D41783001A1304 /* AnagramListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42FF29F22D41783001A1304 /* AnagramListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B42FF29822D3EC60001A1304 /* AnagramCheckerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramCheckerVC.swift; sourceTree = "<group>"; };
 		B42FF29A22D3FDD3001A1304 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		B42FF29D22D409D3001A1304 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		B42FF29F22D41783001A1304 /* AnagramListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				B42FF27822D3DD58001A1304 /* AppDelegate.swift */,
 				B42FF27A22D3DD58001A1304 /* ViewController.swift */,
+				B42FF29F22D41783001A1304 /* AnagramListVC.swift */,
 				B42FF27C22D3DD58001A1304 /* Main.storyboard */,
 				B42FF29A22D3FDD3001A1304 /* HistoryVC.swift */,
 				B42FF29D22D409D3001A1304 /* HistoryManager.swift */,
@@ -210,6 +213,7 @@
 				B42FF29B22D3FDD3001A1304 /* HistoryVC.swift in Sources */,
 				B42FF29922D3EC60001A1304 /* AnagramCheckerVC.swift in Sources */,
 				B42FF27922D3DD58001A1304 /* AppDelegate.swift in Sources */,
+				B42FF2A022D41783001A1304 /* AnagramListVC.swift in Sources */,
 				B42FF29E22D409D3001A1304 /* HistoryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

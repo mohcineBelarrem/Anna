@@ -10,6 +10,53 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Anagrams List-->
+        <scene sceneID="fzw-ap-Qb7">
+            <objects>
+                <viewController title="Anagrams List" id="oEY-wc-xwm" customClass="AnagramListVC" customModule="Anna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HM3-pb-2rB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="79a-T1-8Sy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="anagramCell" id="wDs-Te-z50">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wDs-Te-z50" id="pvn-Bh-GcL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="79a-T1-8Sy" firstAttribute="trailing" secondItem="zxA-Pc-lF9" secondAttribute="trailing" id="0f7-Ib-hw3"/>
+                            <constraint firstItem="79a-T1-8Sy" firstAttribute="leading" secondItem="zxA-Pc-lF9" secondAttribute="leading" id="LCp-rd-0D3"/>
+                            <constraint firstItem="79a-T1-8Sy" firstAttribute="bottom" secondItem="zxA-Pc-lF9" secondAttribute="bottom" id="hBp-W4-Rez"/>
+                            <constraint firstItem="79a-T1-8Sy" firstAttribute="top" secondItem="zxA-Pc-lF9" secondAttribute="top" id="yo1-P9-m3C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zxA-Pc-lF9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anagrams List" id="hv5-Oc-ayH">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="I3p-Xo-DE1">
+                            <connections>
+                                <action selector="done:" destination="oEY-wc-xwm" id="V2r-Ja-J45"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="79a-T1-8Sy" id="SeT-Gn-KJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PfO-p2-Cd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="-638"/>
+        </scene>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -64,6 +111,7 @@
                         <outlet property="textfield" destination="ANB-ap-7N3" id="159-oM-0T8"/>
                         <segue destination="vH2-pL-YbQ" kind="show" identifier="showAnagramChecker" id="6QQ-TA-8xc"/>
                         <segue destination="8DM-I8-b4S" kind="show" identifier="showHistory" id="lLR-Ho-Dca"/>
+                        <segue destination="Zca-19-9YX" kind="show" identifier="showAnagramList" id="tOn-al-ndy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -204,6 +252,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1O6-ap-rjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1442" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WZY-tN-x6g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zca-19-9YX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KWM-BT-uDb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oEY-wc-xwm" kind="relationship" relationship="rootViewController" id="KaB-lC-ulR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JYg-6W-Dqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="-637.5"/>
         </scene>
     </scenes>
 </document>
