@@ -71,7 +71,7 @@ extension UIViewController {
     
     func showEmptyTextfieldAlert() {
         
-        let alert = UIAlertController(title: "Empty Text Field", message: "Please Type a word that's at least 2 letters long", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Not Enough Data", message: "Please Type a word that's at least 2 letters long", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
