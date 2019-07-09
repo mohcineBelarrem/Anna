@@ -30,7 +30,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        processWord()
+        
+        if textfield.text!.count < 2 {
+            showEmptyTextfieldAlert()
+        } else {
+            processWord(word: textfield.text!)
+        }
+
         textfield.resignFirstResponder()
         return true
     }
@@ -42,7 +48,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func showAnagramChecker(_ sender: Any) {
         
-        if textfield.text!.count <= 2 {
+        if textfield.text!.count < 2 {
             showEmptyTextfieldAlert()
             return
         }
@@ -65,10 +71,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     
-    func processWord() {
+    func processWord(word : String) {
         //TODO:
         //Process Word
         //Add it to History
+        HistoryManager.shared.append(newElement: word)
     }
     
     @IBAction func unwindFromHistory(segue: UIStoryboardSegue) {
