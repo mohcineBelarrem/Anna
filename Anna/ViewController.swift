@@ -43,7 +43,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBAction func showAnagramsList(_ sender: Any) {
         
+        if textfield.text!.count < 2 {
+            showEmptyTextfieldAlert()
+            return
+        }
         
+        performSegue(withIdentifier: ViewController.showAnagramListSegue, sender: self)
     }
     
     @IBAction func showAnagramChecker(_ sender: Any) {
@@ -63,18 +68,23 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        let word = textfield.text!
+        processWord(word: word)
+        
         if segue.identifier == ViewController.showAnagramCheckerSegue {
             let destination = segue.destination.children.first as! AnagramCheckerVC
-            destination.originalWord = textfield.text!
+            destination.originalWord = word
+        }
+        
+        if segue.identifier == ViewController.showAnagramListSegue {
+            let destination = segue.destination.children.first as! AnagramListVC
+            destination.word = word
         }
         
     }
     
     
     func processWord(word : String) {
-        //TODO:
-        //Process Word
-        //Add it to History
         HistoryManager.shared.append(newElement: word)
     }
     
@@ -82,6 +92,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         textfield.text = historyWord
     }
 }
+
+
+
 
 
 
